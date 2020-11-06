@@ -6,7 +6,7 @@ import Weather from "../components/Weather/Weather.js";
 function Homepage() {
     return (
         <div className="jumbotron">
-             <Weather />
+            
             <div className="row">
                 <div className="col-12 col-md-2">
                 </div>
@@ -28,13 +28,15 @@ function Homepage() {
             sollicitudin cras varius phasellus neque proin porttitor, tristique cubilia eu ullamcorper 
             ultrices ultricies fusce hendrerit aptent.
                     </p>
+                    
                 </div>
-
+              
             </div>
-
+            
             <hr className="my-4" />
-          <Random />
+            <Random /><Weather />
         </div>
+      
     )
 }
 

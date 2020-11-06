@@ -18,12 +18,12 @@ body {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(46, 95, 95);
+  color: #271f16;
 }
 
 code {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: rgb(46, 95, 95);
+  color: #271f16;
 }
 
 .hero {
@@ -38,20 +38,20 @@ code {
 }
 
 nav {
-  background-color: rgba(202, 207, 205, 0.9);
+  background-color: rgba(236, 241, 243, 0.9);
   
 }
 
 .btn {
   background-color: rgba(202, 207, 205, 0.9);
-  color: rgb(46, 95, 95);
+  color:#271f16;
   border: none;
   
 }
 
 .btn:hover {
   background-color: rgb(236, 231, 231);
-  color: rgb(46, 95, 95); 
+  color: #271f16; 
 
 }
 
@@ -80,10 +80,10 @@ nav {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+/* 
 .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -99,14 +99,31 @@ nav {
   color: rgb(239, 239, 248);
   /* border: 2px solid rgb(30, 30, 58); */
   box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 30%;     
-  align-items: center;
+  width: 40%;     
+  text-align: center;
+  float: right;
 }
 
 .weatherBox p i {
 color: cornsilk;
 text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
 animation: rotateSun 20s infinite linear;
+padding: 0px;
+margin: 0px;
+}
+
+#demo {
+  width: 40%;
+  float: left;
+
+}
+
+element.style {
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+    height: 600px;
 }
 
 @keyframes rotateSun {
@@ -115,9 +132,15 @@ animation: rotateSun 20s infinite linear;
   }
 }
 
+/*hero navs*/
+a {
+  color: #271f16;
+
+  
+}
 
 /* old css */
-
+/* 
 h1,
 h2,
 h3,
@@ -314,7 +337,7 @@ input:focus {
   .card {
     width: 100%;
   }
-}
+} */
 /* 
 
 html,
