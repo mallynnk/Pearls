@@ -67,18 +67,39 @@ a:hover {
   margin-left: 20px;
 }
 
+/*signup*/
+.signupForm {
+  background: rgba(202, 207, 205, 0.5);
+  text-align: left;
+  font-weight: bold;;
+  position: absolute;
+  top: 25%;
+  left:45%;
+  margin-top: -130px;
+  margin-left: -144px;
+}
+.signup  {  
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Blake_Oysters.JPG");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  filter: sepia(50%);
+  position: relative;
+  margin-top: 15px;
+}
 
-/* 
-nav {
-  background-color: rgba(236, 241, 243, 0.9);
-  
-} */
+/*footer*/
 
+.footer {
+  margin-top: 15px;
+}
+
+/*buttons*/
 .btn {
   background-color: rgba(202, 207, 205, 0.9);
   color:#271f16;
-  border: none;
-  
+  border: none;  
 }
 
 .btn:hover {

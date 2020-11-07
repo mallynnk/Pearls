@@ -4,7 +4,9 @@ import Weather from "../components/Weather/Weather.js";
 
 
 function Homepage() {
+
     return (
+
         <div className="jumbotron">
             
             <div className="row">
@@ -36,7 +38,7 @@ function Homepage() {
             <hr className="my-4" />
             <Random /><Weather />
         </div>
-      
+
     )
 }
 
