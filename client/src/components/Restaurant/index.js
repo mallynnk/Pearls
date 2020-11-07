@@ -19,7 +19,7 @@ function Restaurant() {
   return (
     <div>
       <div>
-        <h1>RALEIGH</h1>
+        <h1>● RALEIGH ●</h1>
         <div>
         <h4>ST. ROCH FINE OYSTERS + BAR</h4>
         <p>223 SOUTH WILMINGTON STREET, RALEIGH, NC, 27601</p>
@@ -32,7 +32,7 @@ function Restaurant() {
         </div>
       </div>
       <div>
-        <h1>BEAUFORT</h1>
+        <h1>● BEAUFORT ●</h1>
         <div>
         <h3>ROSE SEAFOOD RETAIL AND WHOLESALE</h3>
         <p>1646 LIVE OAK STREET, BEAUFORT, NC 28516</p>
