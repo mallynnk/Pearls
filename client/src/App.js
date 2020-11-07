@@ -13,6 +13,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Success from './pages/Success';
 import OrderHistory from "./pages/OrderHistory";
+import Restaurants from "./pages/Restaurants";
+import Faq from "./pages/Faq";
 
 //roysters
 import Footer from './components/Footer/Footer';
@@ -48,6 +50,8 @@ function App() {
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/success" component={Success} />
+              <Route exact path="/restaurants" component={Restaurants} />
+              <Route exact path="/faq" component={Faq} />
               <Route component={NoMatch} />
             </Switch>
             <Footer />

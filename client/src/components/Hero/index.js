@@ -5,8 +5,8 @@ import Nav from "../Nav"
 function Hero() {
 
     return (
-<div class="hero-image">
-<div class="hero-text flex-row col">
+<div class="hero">
+<div class="hero-text">
 <Nav />
   
 </div> 

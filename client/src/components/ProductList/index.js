@@ -60,7 +60,7 @@ function filterProducts() {
                   image={product.image}
                   name={product.name}
                   price={product.price}
-                  quantity={product.quantity}
+                  // quantity={product.quantity}
                 />
             ))}
         </div>

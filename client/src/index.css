@@ -1,7 +1,7 @@
 :root {
   --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --secondary: #7796CB;
+  --tertiary: #AB3428;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -18,53 +18,23 @@ body {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #271f16;
+  color: rgb(46, 95, 95);
 }
 
 code {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: #271f16;
+  color: rgb(46, 95, 95);
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/heromaybe2.jpg");
-  height: 400px;
-  justify-items: left;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero {
+  background-image: url("assets/img/heromaybe2.jpg");  
   background-size: cover;
-  position: relative;
-}
-
-
-
-.hero-text {
-  margin-left: 50px;
-  align-items: left;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-/*hero navs*/
-a {
-  color:rgb(209, 205, 205);
-  text-align: left;  
-  margin-left: 50px;  
-}
-
-
-
-a:hover {
-  color: rgb(179, 168, 168);
-
-}
-
-.roy {
-  margin-left: 20px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  opacity: .90;
 }
 
 /*signup*/
@@ -93,8 +63,9 @@ a:hover {
 /*footer*/
 .footer {
   margin-top: 15px;
-
 }
+
+
 
 /*login*/
 .login {
@@ -122,14 +93,15 @@ a:hover {
 
 /*buttons*/
 .btn {
-  background-color: rgba(226, 212, 173, 0.9);
-  color:#271f16;
-  border: none;  
+  background-color: rgba(202, 207, 205, 0.9);
+  color: rgb(46, 95, 95);
+  border: none;
+  
 }
 
 .btn:hover {
   background-color: rgb(236, 231, 231);
-  color: #271f16; 
+  color: rgb(46, 95, 95); 
 
 }
 
@@ -158,10 +130,10 @@ a:hover {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-/* 
+
 .App-link {
   color: #61dafb;
-} */
+}
 
 @keyframes App-logo-spin {
   from {
@@ -177,27 +149,14 @@ a:hover {
   color: rgb(239, 239, 248);
   /* border: 2px solid rgb(30, 30, 58); */
   box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 40%;     
-  text-align: center;
-  float: right;
+  width: 30%;     
+  align-items: center;
 }
 
 .weatherBox p i {
 color: cornsilk;
 text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
 animation: rotateSun 20s infinite linear;
-padding: 0px;
-margin: 0px;
-}
-
-#demo {
-  width: 40%;
-  float: left;
-}
-
-.jumbotron {
-    padding: 4rem 2rem;
-    height: 600px;
 }
 
 @keyframes rotateSun {
@@ -207,9 +166,8 @@ margin: 0px;
 }
 
 
-
 /* old css */
-/* 
+
 h1,
 h2,
 h3,
@@ -299,12 +257,12 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: .2rem;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  margin: 1rem;
+  background-color: rgba(171, 52, 40, .2);
 }
 
 button:hover {
@@ -402,11 +360,17 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+/* FAQ page */
+
+ul {
+ list-style-type: none
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
-} */
+}
 /* 
 
 html,
