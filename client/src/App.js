@@ -15,7 +15,7 @@ import OrderHistory from "./pages/OrderHistory";
 
 //roysters
 import Footer from './components/Footer/Footer';
-import Nav from "./components/Nav";
+import Hero from "./components/Hero";
 // import Navigation from './components/Navigation';
 import { StoreProvider } from "./utils/GlobalState";
 
@@ -38,7 +38,7 @@ function App() {
       <Router>
         <div>
           <StoreProvider>
-            <Nav />
+            <Hero />
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/signup" component={Signup} />
