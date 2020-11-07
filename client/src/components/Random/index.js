@@ -29,7 +29,7 @@ function Random() {
   ];
   function myTimer() {
     let randomNum = [Math.floor(Math.random() * Math.floor(randomFacts.length))];
-    // console.log(randomNum);
+    console.log(randomNum);
 console.log(randomFacts[randomNum]);
     let randomQuote = (randomFacts[randomNum]);
     document.querySelector('#demo').textContent = randomQuote
