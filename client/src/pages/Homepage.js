@@ -25,7 +25,8 @@ function Homepage() {
       </div>
 
       <hr className="my-4" />
-      <Random />  <Weather />
+      <Weather />
+      <Random />  
     </div>
   );
 }

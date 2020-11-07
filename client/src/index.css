@@ -82,7 +82,7 @@ a:hover {
 }
 .signup  {  
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Blake_Oysters.JPG");
-  background-size: 50%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
@@ -95,13 +95,22 @@ a:hover {
 .footer {
   margin-top: 15px;
 }
+#demo {
+  width: 40%;
+  float: left;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+    height: 900px;
+}
 
 
 
 /*login*/
 .login {
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/FishingWaders.JPG");
-  background-size: 50%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
@@ -124,7 +133,7 @@ a:hover {
 
 /*buttons*/
 .btn {
-  background-color: rgba(202, 207, 205, 0.9);
+  background-color: rgba(206, 199, 158, 0.9);
   color:#271f16;
   border: none;
   
@@ -181,15 +190,20 @@ a:hover {
   color: rgb(239, 239, 248);
   /* border: 2px solid rgb(30, 30, 58); */
   box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 30%;     
-  align-items: center;
-  float: right;
+  width: 20%;  
+  /* height: 300px;   */
+  position: absolute; 
+  top: 30%; 
+  left: 45%; 
+  margin-top: 650px; 
+  margin-left: -100px;   
 }
 
 .weatherBox p i {
 color: cornsilk;
 text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
 animation: rotateSun 20s infinite linear;
+align-items: center;
 }
 
 @keyframes rotateSun {
