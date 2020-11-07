@@ -37,6 +37,17 @@ code {
   opacity: .90;
 }
 
+.hero-text {
+  margin-left: 50px;
+  align-items: left;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 /*signup*/
 .signupForm {
   background: rgba(202, 207, 205, 0.5);
