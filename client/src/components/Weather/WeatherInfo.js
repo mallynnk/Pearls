@@ -8,8 +8,9 @@ function WeatherInfo(props) {
 const weatherIcon = `http://openweathermap.org/img/wn/${icon}.png`
   return (
     <React.Fragment>
-      <p>{desc}</p><img src={weatherIcon} className="weatherIcon"></img>
+      
       <div>
+      <p>{desc}</p><img src={weatherIcon} className="weatherIcon"></img>
         <p>Current Temperature</p>
         <p>{temp}°F</p>
       </div>
