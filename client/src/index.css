@@ -18,12 +18,12 @@ body {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(46, 95, 95);
+  color:#271f16;
 }
 
 code {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: rgb(46, 95, 95);
+  color:#271f16;
 }
 
 .hero-image {
@@ -125,16 +125,17 @@ a:hover {
 /*buttons*/
 .btn {
   background-color: rgba(202, 207, 205, 0.9);
-  color: rgb(46, 95, 95);
+  color:#271f16;
   border: none;
   
 }
 
 .btn:hover {
   background-color: rgb(236, 231, 231);
-  color: rgb(46, 95, 95); 
+  color: #271f16; 
 
 }
+
 
 .App {
   text-align: center;
