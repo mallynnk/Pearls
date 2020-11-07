@@ -1,13 +1,13 @@
 import React, { Component, useState, useEffect } from "react";
-import Restaurant from "../components/Restaurant";
+import Faqs from "../components/Faq";
 require("dotenv").config();
 
-const Restaurants=() => {
+const Faq =() => {
   return (
     <div className="container">
-      <Restaurant />
+      <Faqs />
     </div>
   );
 };
 
-export default Restaurants;
+export default Faq;

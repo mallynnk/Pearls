@@ -21,7 +21,7 @@ function Restaurant() {
       <div>
         <h1>RALEIGH</h1>
         <div>
-        <h3>ST. ROCH FINE OYSTERS + BAR</h3>
+        <h4>ST. ROCH FINE OYSTERS + BAR</h4>
         <p>223 SOUTH WILMINGTON STREET, RALEIGH, NC, 27601</p>
         <img src={stRoch} style={style}></img>
         </div>
