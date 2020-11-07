@@ -27,7 +27,7 @@ function WeatherContainer() {
           )
             .then((response) => response.json())
             .then(data =>  
-              // console.log(data, data.wind.speed, data.weather[0].icon)
+              // console.log(data)
               
                 
               // ======= The Code Below Works.....only Commented out to save API calls =====

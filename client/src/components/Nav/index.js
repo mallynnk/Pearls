@@ -44,6 +44,11 @@ function Nav() {
               Shop
             </Link>
           </li>
+          <li className="mx-1">
+            <Link to="/restaurants">
+              Restaurants
+            </Link>
+          </li>
         </ul>
       );
     }
