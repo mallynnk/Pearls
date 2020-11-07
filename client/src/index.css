@@ -26,21 +26,53 @@ code {
   color: #271f16;
 }
 
-.hero {
-  background-image: url("assets/img/heromaybe2.jpg");  
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/heromaybe2.jpg");
   height: 400px;
-  width: 100%;
-  opacity: .90;
+  justify-items: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
+
+
+.hero-text {
+  margin-left: 50px;
+  align-items: left;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*hero navs*/
+a {
+  color:rgb(209, 205, 205);
+  text-align: left;  
+  margin-left: 50px;  
+}
+
+
+
+a:hover {
+  color: rgb(179, 168, 168);
+
+}
+
+.roy {
+  margin-left: 20px;
+}
+
+
+/* 
 nav {
   background-color: rgba(236, 241, 243, 0.9);
   
-}
+} */
 
 .btn {
   background-color: rgba(202, 207, 205, 0.9);
@@ -115,10 +147,6 @@ margin: 0px;
 #demo {
   width: 40%;
   float: left;
-
-}
-
-element.style {
 }
 
 .jumbotron {
@@ -132,12 +160,7 @@ element.style {
   }
 }
 
-/*hero navs*/
-a {
-  color: #271f16;
 
-  
-}
 
 /* old css */
 /* 
