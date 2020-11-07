@@ -18,72 +18,40 @@ body {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #271f16;
+  color: rgb(46, 95, 95);
 }
 
 code {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: #271f16;
+  color: rgb(46, 95, 95);
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/heromaybe2.jpg");
-  height: 400px;
-  justify-items: left;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero {
+  background-image: url("assets/img/heromaybe2.jpg");  
   background-size: cover;
-  position: relative;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  opacity: .90;
 }
 
-
-
-.hero-text {
-  margin-left: 50px;
-  align-items: left;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-/*hero navs*/
-a {
-  color:rgb(209, 205, 205);
-  text-align: left;  
-  margin-left: 50px;  
-}
-
-
-
-a:hover {
-  color: rgb(179, 168, 168);
-
-}
-
-.roy {
-  margin-left: 20px;
-}
-
-
-/* 
 nav {
-  background-color: rgba(236, 241, 243, 0.9);
+  background-color: rgba(202, 207, 205, 0.9);
   
-} */
+}
 
 .btn {
   background-color: rgba(202, 207, 205, 0.9);
-  color:#271f16;
+  color: rgb(46, 95, 95);
   border: none;
   
 }
 
 .btn:hover {
   background-color: rgb(236, 231, 231);
-  color: #271f16; 
+  color: rgb(46, 95, 95); 
 
 }
 
@@ -112,10 +80,10 @@ nav {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-/* 
+
 .App-link {
   color: #61dafb;
-} */
+}
 
 @keyframes App-logo-spin {
   from {
@@ -131,27 +99,14 @@ nav {
   color: rgb(239, 239, 248);
   /* border: 2px solid rgb(30, 30, 58); */
   box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 40%;     
-  text-align: center;
-  float: right;
+  width: 30%;     
+  align-items: center;
 }
 
 .weatherBox p i {
 color: cornsilk;
 text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
 animation: rotateSun 20s infinite linear;
-padding: 0px;
-margin: 0px;
-}
-
-#demo {
-  width: 40%;
-  float: left;
-}
-
-.jumbotron {
-    padding: 4rem 2rem;
-    height: 600px;
 }
 
 @keyframes rotateSun {
@@ -161,9 +116,8 @@ margin: 0px;
 }
 
 
-
 /* old css */
-/* 
+
 h1,
 h2,
 h3,
@@ -366,7 +320,7 @@ ul {
   .card {
     width: 100%;
   }
-} */
+}
 /* 
 
 html,
