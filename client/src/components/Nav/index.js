@@ -23,23 +23,23 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
+        <section className="flex-row">
+          <h3 className="mx-1">
             <Link to="/signup">Signup</Link>
-          </li>
-          <li className="mx-1">
+          </h3>
+          <h3 className="mx-1">
             <Link to="/login">Login</Link>
-          </li>
-          <li className="mx-1">
+          </h3>
+          <h3 className="mx-1">
             <Link to="/shophome">Shop</Link>
-          </li>
-          <li className="mx-1">
+          </h3>
+          <h3 className="mx-1">
             <Link to="/restaurants">Restaurants</Link>
-          </li>
-          <li className="mx-1">
+          </h3>
+          <h3 className="mx-1">
             <Link to="/faq">FAQ</Link>
-          </li>
-        </ul>
+          </h3>
+        </section>
       );
     }
   }
@@ -47,7 +47,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">-Roysters</Link>
+        <Link to="/">Roysters</Link>
       </h1>
 
       <nav>{showNavigation()}</nav>
