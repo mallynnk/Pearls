@@ -4,6 +4,7 @@ function WeatherInfo(props) {
   const { temp, humidity, desc, wind, icon } = props.data;
 const weatherIcon = `http://openweathermap.org/img/wn/${icon}.png`
   return (
+    
     <React.Fragment>
       
       <div>

@@ -4,8 +4,7 @@ import Weather from "../components/Weather/Weather.js";
 
 function Homepage() {
   return (
-    <div className="jumbotron">
-      <Weather />
+    <div className="jumbotron">     
       <div className="row">
         <div className="col-12 col-md-2"></div>
         <div id="about-heading" className="col-12 col-md-10">
@@ -26,7 +25,8 @@ function Homepage() {
       </div>
 
       <hr className="my-4" />
-      <Random />
+      <Weather />
+      <Random />  
     </div>
   );
 }

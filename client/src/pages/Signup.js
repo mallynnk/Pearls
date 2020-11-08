@@ -4,6 +4,7 @@ import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
 
+
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [addUser] = useMutation(ADD_USER);
@@ -29,7 +30,8 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <section class="signup">
+    <div className="container my-1 signupForm col-3">
       <Link to="/login">
         ← Go to Login
       </Link>
@@ -57,7 +59,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email Address:</label>
           <input
             placeholder="youremail@test.com"
             name="email"
@@ -83,6 +85,7 @@ function Signup(props) {
         </div>
       </form>
     </div>
+    </section>
   );
 
 }
