@@ -102,8 +102,18 @@ a:hover {
 
 .jumbotron {
     padding: 4rem 2rem;
-    height: 650px;
+    height: 950px;
 }
+
+
+/*Carousel*/
+.sliderimg{
+  width: 40%;
+  height: 300px;
+  object-fit: cover
+}
+
+
 
 /*login*/
 .login {
@@ -129,6 +139,10 @@ a:hover {
   margin-top: -130px;
   margin-left: -144px;
   padding-bottom: 10px;
+}
+.carousel {
+  max-height: 200px;
+ 
 }
 
 /*buttons*/

@@ -1,8 +1,10 @@
 import React from "react";
 import Random from "../components/Random";
 import Weather from "../components/Weather/Weather.js";
+import AliceCarousel from "../components/Carousel/Carousel.js"
 
 function Homepage() {
+
     return (
         <div className="jumbotron">
 
@@ -30,9 +32,13 @@ function Homepage() {
             <div className="line">
                 <hr className="my-4" />
                 <Random />
-            </div>
+                <AliceCarousel />
+
+             </div>
         </div>
     );
 }
 
 export default Homepage;
+
+
