@@ -75,9 +75,11 @@ a:hover {
   left:49%;
   margin-top: -130px;
   margin-left: -144px;
-  padding-bottom: 10px;
-  justify-content: center;
+  padding: 2rem;
+  border-radius: .2rem;
+
 }
+
 .signup  {  
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Blake_Oysters.JPG");
   background-size: 100%;
@@ -87,6 +89,24 @@ a:hover {
   filter: sepia(50%);
   position: relative;
   margin-top: 15px;
+}
+
+input { 
+  margin-left: 1rem;
+}
+
+button {
+  background-color: rgba(206, 199, 158, 0.9);
+  color:#271f16;
+  border: none;
+  padding: .5rem;
+  width: 100%;
+  border-radius: .2rem
+}
+
+button:hover {
+  background-color: rgb(236, 231, 231);
+  color: #271f16; 
 }
 
 /*login*/
@@ -100,7 +120,6 @@ a:hover {
   position: relative;
   margin-top: 15px;
   text-align: center;
-  
 }
 
 .loginForm {
@@ -112,7 +131,8 @@ a:hover {
   left: 49%;
   margin-top: -130px;
   margin-left: -144px;
-  padding-bottom: 10px;
+  padding: 2rem;
+  border-radius: .2rem;
 }
 
 /*footer*/
@@ -124,9 +144,56 @@ a:hover {
   width: 40%;
   float: left;
 }
+/*faq*/
+ul {
+ list-style-type: none;
+}
 
-.line {
+li {
+  text-align: left;
+}
+
+.faq {
+  text-align: center;
+  padding: 3rem;
+  font-size: 4.5rem;
+}
+
+.faqQ {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.faqA {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/*Restaurant*/
+
+.restBox {
+  padding: 2rem;
+}
+
+.restHead {
+  text-align: center;
+  font-size: 4rem;
+}
+
+
+/* .line {
   bottom: 40%;
+} */
+
+.restInfo {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/*App*/
+.App {
+  text-align: center;
 }
 
 .jumbotron {
@@ -164,6 +231,7 @@ a:hover {
   display: flex;
   align-items: center;
   animation: slideshow 40s linear infinite;
+
 
 }
 .slide img {
@@ -281,3 +349,24 @@ align-items: center;
     transform: rotate(360deg);
   }
 }
+
+/*footer*/
+.footer {
+  margin-top: 15px;
+}
+#demo {
+  width: 40%;
+  float: left;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+    height: 900px;
+}
+
+@keyframes rotateSun {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
