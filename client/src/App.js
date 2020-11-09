@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
+
 //import pages
 import Shophome from "./pages/Shophome";
 import Homepage from "./pages/Homepage";
@@ -12,10 +13,12 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Success from './pages/Success';
 import OrderHistory from "./pages/OrderHistory";
+import Restaurants from "./pages/Restaurants";
+import Faq from "./pages/Faq";
 
 //roysters
 import Footer from './components/Footer/Footer';
-import Nav from "./components/Nav";
+import Hero from "./components/Heros";
 // import Navigation from './components/Navigation';
 import { StoreProvider } from "./utils/GlobalState";
 
@@ -38,7 +41,7 @@ function App() {
       <Router>
         <div>
           <StoreProvider>
-            <Nav />
+            <Hero />
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/signup" component={Signup} />
@@ -47,6 +50,8 @@ function App() {
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/success" component={Success} />
+              <Route exact path="/restaurants" component={Restaurants} />
+              <Route exact path="/faq" component={Faq} />
               <Route component={NoMatch} />
             </Switch>
             <Footer />
