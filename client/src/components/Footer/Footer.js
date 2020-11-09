@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <section class="footer">
+        <section class="footer col">
         <footer className="footer">
             <div className="d-flex justify-content-center">   
                 <a className="btn btn-outline-dark btn-social mx-1" 

@@ -8,14 +8,32 @@ import holdingOysters from '../../assets/holding_Oysters.jpg';
 
 function carouselShow() {
     return (
-        <div className="carouselShow">
-            <AliceCarousel autoPlay autoPlayInterval="3000" autoPlayDirection="rtl" autoPlay={true} fadeOutAnimation={true}>
-                <img src={farm} className="sliderimg" />
-                <img src={rows} className="sliderimg" />
-                <img src={FreshOysters} className="sliderimg" />
-                <img src={holdingOysters} className="sliderimg" />
-            </AliceCarousel>
+        // <div className="carouselShow">
+        //     <AliceCarousel autoPlay autoPlayInterval="3000" autoPlayDirection="rtl" autoPlay={true} fadeOutAnimation={true}>
+        //         <img src={farm} className="sliderimg" />
+        //         <img src={rows} className="sliderimg" />
+        //         <img src={FreshOysters} className="sliderimg" />
+        //         <img src={holdingOysters} className="sliderimg" />
+        //     </AliceCarousel>
+        // </div>
+
+        <div class="wrapper">
+            <div class="slider">
+                <div class="slide">
+                    <img src={farm} />
+                    <img src={rows} />
+                    <img src={FreshOysters} />
+                    <img src={holdingOysters} />
+                </div>
+                <div class="slide">
+                    <img src={farm} />
+                    <img src={rows} />
+                    <img src={FreshOysters} />
+                    <img src={holdingOysters} />
+                </div>
+            </div>
         </div>
+
     );
 }
 
