@@ -19,6 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#271f16;
+  background-color: #f3f1ed; 
 }
 
 code {
@@ -51,7 +52,7 @@ code {
 a {
   color:rgb(209, 205, 205);
   text-align: left;  
-  margin-left: 50px;  
+  margin-left: 5px;  
 }
 
 a:hover {
@@ -67,15 +68,16 @@ a:hover {
 /*signup*/
 .signupForm {
   background: rgba(202, 207, 205, 0.5);
-  text-align: left;
+  text-align: center;
   font-weight: bold;;
   position: absolute;
   top: 25%;
-  left:45%;
+  left:49%;
   margin-top: -130px;
   margin-left: -144px;
   padding: 2rem;
   border-radius: .2rem;
+
 }
 
 .signup  {  
@@ -117,33 +119,30 @@ button:hover {
   filter: sepia(50%);
   position: relative;
   margin-top: 15px;
+  text-align: center;
 }
 
 .loginForm {
   background: rgba(202, 207, 205, 0.5);
-  text-align: left;
+  text-align: center;
   font-weight: bold;;
   position: absolute;
   top: 25%;
-  left:45%;
+  left: 49%;
   margin-top: -130px;
   margin-left: -144px;
   padding: 2rem;
   border-radius: .2rem;
 }
 
-/*buttons*/
-.btn {
-  background-color: rgba(206, 199, 158, 0.9);
-  color:#271f16;
-  border: none;
-  
+/*footer*/
+.footer {
+  margin-top: 15px;
+  justify-content: center;
 }
-
-.btn:hover {
-  background-color: rgb(236, 231, 231);
-  color: #271f16; 
-
+#demo {
+  width: 40%;
+  float: left;
 }
 /*faq*/
 ul {
@@ -181,6 +180,11 @@ li {
   font-size: 4rem;
 }
 
+
+/* .line {
+  bottom: 40%;
+} */
+
 .restInfo {
   text-align: center;
   padding: 1rem;
@@ -190,7 +194,125 @@ li {
 /*App*/
 .App {
   text-align: center;
+}
 
+.jumbotron {
+    padding: 4rem 2rem;
+    height: 775px;
+    background-color: #f3f1ed;  
+}
+
+
+/*Carousel*/
+.wrapper {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-top: -60px;
+
+}
+
+.slider {
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow:hidden;
+  background-color: #271f16;
+}
+
+.slide {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 40s linear infinite;
+
+
+}
+.slide img {
+  height: 200px;
+  padding: 0 30px 0 30px;
+}
+
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+/*End Carousel*/
+
+/*buttons*/
+.btn {
+  background-color: #b9b7b3;
+  color:#271f16;
+  border: none;
+  
+}
+
+.btn:hover {
+  background-color: rgb(236, 231, 231);
+  color: #271f16; 
+}
+
+.title {
+left: 10%;
+}
+
+.about {
+  left: 10%;
+  font-size: 25px;
+}
+
+/*Weather*/
+.weatherBox p i {
+color: cornsilk;
+text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
+animation: rotateSun 20s infinite linear;
+align-items: center;
+}
+.weatherBox {
+  background-color:#b9b7b3;
+  color: #271f16;
+  /* border: 2px solid rgb(30, 30, 58); */
+  box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
+  width: 20%;  
+  /* height: 300px;   */
+  position: absolute; 
+  top: 8%; 
+  left: -15%; 
+}
+
+@keyframes rotateSun {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/*Other Rules*/
+.App {
+  text-align: center;
 }
 
 .App-logo {
@@ -228,27 +350,6 @@ li {
   }
 }
 
-.weatherBox {
-  background-color:#271f16;
-  color: rgb(239, 239, 248);
-  /* border: 2px solid rgb(30, 30, 58); */
-  box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 20%;  
-  /* height: 300px;   */
-  position: absolute; 
-  top: 30%; 
-  left: 45%; 
-  margin-top: 650px; 
-  margin-left: -100px;   
-}
-
-.weatherBox p i {
-color: cornsilk;
-text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
-animation: rotateSun 20s infinite linear;
-align-items: center;
-}
-
 /*footer*/
 .footer {
   margin-top: 15px;
@@ -268,6 +369,4 @@ align-items: center;
       transform: rotate(360deg);
   }
 }
-
-
 
