@@ -50,7 +50,7 @@ function filterProducts() {
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
+      <h2 class="products">Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
             {filterProducts().map(product => (
@@ -60,7 +60,7 @@ function filterProducts() {
                   image={product.image}
                   name={product.name}
                   price={product.price}
-                  quantity={product.quantity}
+                  // quantity={product.quantity}
                 />
             ))}
         </div>
