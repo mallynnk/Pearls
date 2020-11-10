@@ -29,11 +29,9 @@ function Homepage() {
                     <Weather />
                 </div>
             </div>
-            <div className="line">
-                <hr className="my-4" />
-                <Random />
+            <div>                      
                 <AliceCarousel />
-
+                <Random />
              </div>
         </div>
     );
