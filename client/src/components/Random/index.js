@@ -36,9 +36,10 @@ console.log(randomFacts[randomNum]);
   }
 
   return (
-    <section>
-      <p></p>
-      <span id="demo"></span>
+    <section class="col-12 randomFacts">
+      <p>
+      <span class="col-12" id="demo"></span>
+      </p>
     </section>
   );
 }
