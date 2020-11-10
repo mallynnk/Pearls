@@ -9,15 +9,6 @@ import crab from '../../assets/crab.jpeg';
 
 function carouselShow() {
     return (
-        // <div className="carouselShow">
-        //     <AliceCarousel autoPlay autoPlayInterval="3000" autoPlayDirection="rtl" autoPlay={true} fadeOutAnimation={true}>
-        //         <img src={farm} className="sliderimg" />
-        //         <img src={rows} className="sliderimg" />
-        //         <img src={FreshOysters} className="sliderimg" />
-        //         <img src={holdingOysters} className="sliderimg" />
-        //     </AliceCarousel>
-        // </div>
-
         <div class="wrapper">
             <div class="slider">
                 <div class="slide">

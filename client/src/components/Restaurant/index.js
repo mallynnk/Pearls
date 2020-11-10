@@ -28,7 +28,7 @@ function Restaurant() {
         <p>8401 HONEYCUTT ROAD, RALEIGH, NC 27615</p>
         <img src={maddensSeafood} alt='maddens seafood logo'></img>
         </div>
-      </div>
+        </div>
       <div class="restBox">
         <h2 class="restHead">BEAUFORT</h2>
         <div class="restInfo">

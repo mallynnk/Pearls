@@ -19,7 +19,7 @@ import Faq from "./pages/Faq";
 
 //roysters
 import Footer from './components/Footer/Footer';
-import Hero from "./components/Hero";
+import Hero from "./components/Heros";
 // import Navigation from './components/Navigation';
 import { StoreProvider } from "./utils/GlobalState";
 
