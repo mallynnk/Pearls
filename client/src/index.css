@@ -210,12 +210,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .slider {
-  width: 1000px;
-  height: 200px;
+  width: 1200px;
+  height: 300px;
   position: relative;
   background: white;
   box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
@@ -225,16 +225,15 @@ li {
 }
 
 .slide {
-  height: 200px;
+  height: 300px;
   display: flex;
   align-items: center;
   animation: slideshow 40s linear infinite;
-
-
 }
+
 .slide img {
-  height: 200px;
-  padding: 0 30px 0 30px;
+  height: 300px;
+  padding: 0 10px 0 10px;
 }
 
 .slider::before, .slider::after {
@@ -298,7 +297,7 @@ align-items: center;
   width: 20%;  
   /* height: 300px;   */
   position: absolute; 
-  top: 8%; 
+  top: 0%; 
   left: -15%; 
 }
 
