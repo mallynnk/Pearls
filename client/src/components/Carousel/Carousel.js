@@ -9,7 +9,7 @@ import crab from '../../assets/crab.jpeg';
 
 function carouselShow() {
     return (
-        <div class="wrapper">
+        <div class="wrapper col-12">
             <div class="slider">
                 <div class="slide">
                     <img src={farm} />
