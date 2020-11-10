@@ -49,8 +49,8 @@ function ProductItem(item) {
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img
-          width="250px"
-          height="300px"
+          width="260px"
+          height="330px"
           alt={name}
           src={`/images/${image}`}
         />

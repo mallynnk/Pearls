@@ -95,18 +95,49 @@ input {
   margin-left: 1rem;
 }
 
-button {
-  background-color: rgba(206, 199, 158, 0.9);
+/*buttons*/
+.btn {
+  background-color: #b9b7b3;
   color:#271f16;
   border: none;
-  padding: .5rem;
-  width: 100%;
-  border-radius: .2rem
+  
+}
+
+.btn:hover {
+  background-color: rgb(236, 231, 231);
+  color: #271f16; 
+}
+
+button {
+  background-color: #b9b7b3;
+  color:#271f16;
+  border: none;
+  margin-right: 2px;
+  width: 15%;
+  border-radius: .2rem;  
 }
 
 button:hover {
   background-color: rgb(236, 231, 231);
   color: #271f16; 
+}
+
+.cart-button {
+  width: 100%;
+  background-color: #b9b7b3;
+  color:#271f16;
+}
+
+.loginSubmitBtn {
+  width: 40%;
+}
+
+.categoryMenu {
+text-align: center;
+}
+
+.products {
+  text-align: center;
 }
 
 /*login*/
@@ -202,7 +233,6 @@ li {
     background-color: #f3f1ed;  
 }
 
-
 /*Carousel*/
 .wrapper {
   width: 100vw;
@@ -260,18 +290,7 @@ li {
 }
 /*End Carousel*/
 
-/*buttons*/
-.btn {
-  background-color: #b9b7b3;
-  color:#271f16;
-  border: none;
-  
-}
 
-.btn:hover {
-  background-color: rgb(236, 231, 231);
-  color: #271f16; 
-}
 
 .title {
 left: 10%;
@@ -366,4 +385,82 @@ align-content: center;
       transform: rotate(360deg);
   }
 }
+
+/*Shop Page*/
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+.px-2 {
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+}
+
+.py-1 {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
+.py-2 {
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+
+
+/* FAQ page */
+
+ul {
+ list-style-type: none
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
 
