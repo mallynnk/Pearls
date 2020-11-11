@@ -38,7 +38,7 @@ console.log(randomFacts[randomNum]);
   return (
     <section class="col-12 randomFacts">
       <p>
-      <span class="col-12" id="demo"></span>
+      <span class="col-12" id="demo">What is an oyster's favorite band? Pearl Jam.</span>
       </p>
     </section>
   );

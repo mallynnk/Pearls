@@ -30,7 +30,7 @@ code {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/heromaybe2.jpg");
-  height: 400px;
+  height: 500px;
   justify-items: left;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ code {
 
 .hero-text {
   margin-left: 50px;
-  align-items: left;
+  /* align-items: left; */
   text-align: left;
   position: absolute;
   top: 50%;
@@ -53,7 +53,7 @@ code {
 a {
   color:rgb(209, 205, 205);
   text-align: left;  
-  margin-left: 5px;  
+  margin-left: 5rem;  
 }
 
 a:hover {
@@ -65,20 +65,98 @@ a:hover {
   margin-left: 20px;
 }
 
+/*Home*/
+
+.row {
+  margin-top: 8rem;
+
+}
+.title {
+  padding: .5rem
+  }
+  
+.about {
+  font-size: 25px;
+  padding: .5rem
+}
+
+
+/*HomepageCarousel*/
+.wrapper {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.slider {
+  /* width: 1200px; */
+  height: 500px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow:hidden;
+  background-color: #271f16;
+ 
+}
+
+.Homeslide {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 120s linear infinite;
+}
+
+.slide img {
+  height: 300px;
+  padding: 0 10px 0 10px;
+}
+
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+/*End Carousel*/
 
 /*signup*/
 .signupForm {
   background: rgba(202, 207, 205, 0.5);
   text-align: center;
   font-weight: bold;;
-  position: absolute;
   top: 25%;
   left:49%;
   margin-top: -130px;
   margin-left: -144px;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: .2rem;
 
+}
+
+.roysters {
+  text-align: center;
+  padding: 5rem;
+  font-size: 5rem;
 }
 
 .signup  {  
@@ -86,10 +164,9 @@ a:hover {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 1500px;
   filter: sepia(50%);
   position: relative;
-  margin-top: 15px;
 }
 
 input { 
@@ -147,23 +224,22 @@ text-align: center;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 1500px;
   filter: sepia(50%);
   position: relative;
-  margin-top: 15px;
-  text-align: center;
+  /* margin-top: 15px; */
+  /* text-align: center; */
 }
 
 .loginForm {
   background: rgba(202, 207, 205, 0.5);
   text-align: center;
   font-weight: bold;;
-  position: absolute;
   top: 25%;
   left: 49%;
   margin-top: -130px;
   margin-left: -144px;
-  padding: 2rem;
+  padding: 5rem;
   border-radius: .2rem;
 }
 
@@ -179,6 +255,8 @@ text-align: center;
 
 .randomFacts {
   text-align: center;
+  padding: 10rem;
+  font-size: 2rem
 }
 
 /*faq*/
@@ -253,73 +331,8 @@ li {
   color: black;
 }
 
-/*HomepageCarousel*/
-.wrapper {
-  width: 100vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.slider {
-  width: 1200px;
-  height: 300px;
-  position: relative;
-  background: white;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
-  display: flex;
-  overflow:hidden;
-  background-color: #271f16;
-}
-
-.Homeslide {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  animation: slideshow 40s linear infinite;
-}
-
-.slide img {
-  height: 300px;
-  padding: 0 10px 0 10px;
-}
-
-.slider::before, .slider::after {
-  height: 100px;
-  width: 200px;
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
-  z-index: 2;
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider::after {
-  right:0;
-  top:0;
-  transform: rotateZ(180deg);
-}
-
-@keyframes slideshow {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-100%);}
-}
-/*End Carousel*/
 
 
-
-.title {
-left: 10%;
-}
-
-.about {
-  left: 10%;
-  font-size: 25px;
-}
 
 /*Weather*/
 .weatherBox p i {
@@ -335,6 +348,7 @@ align-items: center;
   box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
   width: 20%;  
   /* height: 300px;   */
+  padding: 4rem;
   position: absolute; 
   top: 0%; 
   left: -15%; 
@@ -413,6 +427,7 @@ align-content: center;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem;
 }
 
 .flex-row {
