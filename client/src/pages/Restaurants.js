@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const Restaurants=() => {
   return (
-    <div className="container">
+    <div className="Restcontainer">
       <Restaurant />
     </div>
   );

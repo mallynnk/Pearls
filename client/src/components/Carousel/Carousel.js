@@ -11,7 +11,7 @@ function carouselShow() {
     return (
         <div class="wrapper col-12">
             <div class="slider">
-                <div class="slide">
+                <div class="Homeslide">
                     <img src={farm} />
                     <img src={rows} />
                     <img src={FreshOysters} />
@@ -19,7 +19,7 @@ function carouselShow() {
                     <img src={crab} />
                     <img src={sunrise} />
                 </div>
-                <div class="slide">
+                <div class="Homeslide">
                     <img src={farm} />
                     <img src={rows} />
                     <img src={FreshOysters} />

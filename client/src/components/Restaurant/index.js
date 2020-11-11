@@ -16,9 +16,7 @@ function Restaurant() {
   }
 
   const carouselItems = {
-    padding: 3,
-
-
+  
   }
   const [index, setIndex] = useState(0);
 
