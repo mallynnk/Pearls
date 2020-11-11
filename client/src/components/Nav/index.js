@@ -13,6 +13,12 @@ function Nav() {
           <li>
             <Link to="/shophome">Shop</Link>
           </li>
+          <h3>
+            <Link to="/restaurants">Restaurants</Link>
+          </h3>
+          <h3>
+            <Link to="/faq">FAQ</Link>
+          </h3>
           <li>
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
