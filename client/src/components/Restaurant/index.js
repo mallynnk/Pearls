@@ -37,7 +37,8 @@ function Restaurant() {
        <Carousel.Item>
        <img  className="d-block w-100" src={maddensSeafood} alt='Second Slide' />
           <Carousel.Caption>
-            <h2 class="restHead">MADDEN'S SEAFOOD</h2>
+          <h2 class="restHead">RALEIGH</h2>
+          <h3>MADDEN'S SEAFOOD</h3>
             <p>8401 HONEYCUTT ROAD, RALEIGH, NC 27615</p>
           </Carousel.Caption>
        </Carousel.Item>
@@ -52,7 +53,9 @@ function Restaurant() {
        <Carousel.Item>
        <img  className="d-block w-100" src={blackbeard}  alt='Fourth Slide'/>
           <Carousel.Caption>
-          <h2 class="restHead">BLACKBEARD'S GRILL AND STEAM BAR</h2>
+          <h2 class="restHead">BEAUFORT</h2>
+
+          <h3>BLACKBEARD'S GRILL AND STEAM BAR</h3>
           <p>1644 LIVE OAK STREET, BEAUFORT, NC 28516</p>
           </Carousel.Caption>
        </Carousel.Item>
