@@ -26,7 +26,7 @@ function Faq() {
         </li>
         <li>
             <h2 className="faqQ">Can I eat Oysters year round?</h2>
-            <p className="faqA">Yes! You can eat our Oysters year round because we ensure that we properly refridgerate our little buddies before they find their final home with you.</p>
+            <p className="faqA">Yes! You can eat our Oysters year round because we ensure that we properly refrigerate our little buddies before they find their final home with you.</p>
         </li>
         <li>
             <h2 className="faqQ">How should I serve Oysters?</h2>
