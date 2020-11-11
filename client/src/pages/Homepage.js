@@ -33,6 +33,7 @@ function Homepage() {
             <div>                      
                 <AliceCarousel />
                 <Random />
+                <Weather />
                 <Footer />
              </div>
         </div>
