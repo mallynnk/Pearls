@@ -14,10 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "bulma": "^0.9.1",
     "dotenv": "^8.2.0",
     "if-env": "^1.0.4",
-    "react-alice-carousel": "^2.0.2"
+    "react-alice-carousel": "^2.0.2",
+    "react-bootstrap": "^1.4.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"

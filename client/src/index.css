@@ -233,7 +233,26 @@ li {
     background-color: #f3f1ed;  
 }
 
-/*Carousel*/
+/*RestaurantCarousel*/
+.slide {
+  display: flex;
+  align-items: center;
+}
+
+.Restcontainer {
+  padding: 5rem;
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption {
+  position: initial;
+  color: black;
+}
+
+/*HomepageCarousel*/
 .wrapper {
   width: 100vw;
   height: 50vh;
@@ -254,7 +273,7 @@ li {
   background-color: #271f16;
 }
 
-.slide {
+.Homeslide {
   height: 300px;
   display: flex;
   align-items: center;
