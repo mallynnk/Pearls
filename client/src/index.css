@@ -14,12 +14,13 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#271f16;
   background-color: #f3f1ed; 
+  overflow-x: hidden;
 }
 
 code {
