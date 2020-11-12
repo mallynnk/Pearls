@@ -14,7 +14,7 @@ const weatherIcon = `http://openweathermap.org/img/wn/${icon}.png`
       </div>
       <div>
         <p>Current Humidity</p>
-        <p>{humidity}°</p>
+        <p>{humidity}°F</p>
       </div>
       <div>
         <p>Wind Speed</p>

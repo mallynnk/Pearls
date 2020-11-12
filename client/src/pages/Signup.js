@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
+import Nav from "../components/Nav"
+
 import { ADD_USER } from "../utils/mutations";
 
 
@@ -31,6 +33,7 @@ function Signup(props) {
 
   return (
     <section class="signup">
+          <Nav></Nav>
     <div className="signupForm col-3">
       <Link to="/login">
         ← Go to Login

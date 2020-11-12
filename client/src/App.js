@@ -42,7 +42,6 @@ function App() {
       <Router>
         <div>
           <StoreProvider>
-            <Hero />
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/signup" component={Signup} />
@@ -55,7 +54,7 @@ function App() {
               <Route exact path="/faq" component={Faq} />
               <Route component={NoMatch} />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
           </StoreProvider>
         </div>
       </Router>

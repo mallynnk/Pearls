@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { useQuery } from '@apollo/react-hooks';
 import { QUERY_USER } from "../utils/queries";
+import Footer from "../components/Footer/Footer"
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
@@ -30,6 +31,8 @@ function OrderHistory() {
                     <div key={index} className="card px-1 py-1">
                       <Link to={`/products/${_id}`}>
                         <img
+                          width="260px"
+                          height="330px"
                           alt={name}
                           src={`/images/${image}`}
                         />
@@ -45,7 +48,7 @@ function OrderHistory() {
             ))}
           </>
         ) : null}
-
+     <Footer/>
       </div>
 
     </>)
