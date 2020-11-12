@@ -48,7 +48,7 @@ function getWeatherData(){}
 
 
   return (
-    <section className="weatherBox card col" >
+    <section className="weatherBox" >
       <h5>Current Weather on the Farm</h5>
       
       <section className="weatherInfo">

@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   color:#271f16;
   background-color: #f3f1ed; 
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 code {
@@ -30,7 +32,7 @@ code {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/heromaybe2.jpg");
-  height: 400px;
+  height: 500px;
   justify-items: left;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +42,7 @@ code {
 
 .hero-text {
   margin-left: 50px;
-  align-items: left;
+  /* align-items: left; */
   text-align: left;
   position: absolute;
   top: 50%;
@@ -53,7 +55,7 @@ code {
 a {
   color:rgb(209, 205, 205);
   text-align: left;  
-  margin-left: 5px;  
+  margin-left: 5rem;  
 }
 
 a:hover {
@@ -65,20 +67,109 @@ a:hover {
   margin-left: 20px;
 }
 
+/*Home*/
+
+.row {
+  margin-top: 8rem;
+
+}
+.title {
+  padding: .5rem
+  }
+  
+.about {
+  font-size: 25px;
+  padding: 2rem
+}
+
+
+/*HomepageCarousel*/
+.wrapper {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.slider {
+  /* width: 1200px; */
+  height: 500px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow:hidden;
+  background-color: #271f16;
+ 
+}
+
+.Homeslide {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 120s linear infinite;
+}
+
+.slide img {
+  height: 300px;
+  padding: 0 10px 0 10px;
+}
+
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+/*End Carousel*/
 
 /*signup*/
 .signupForm {
   background: rgba(202, 207, 205, 0.5);
   text-align: center;
   font-weight: bold;;
-  position: absolute;
-  top: 25%;
-  left:49%;
+  top: 10%;
+  left:45%;
   margin-top: -130px;
   margin-left: -144px;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: .2rem;
 
+}
+
+.roysters {
+  text-align: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+
+.shellImage {
+  height: 10rem;
+  opacity: .5;
+  margin-top: 2rem
+}
+
+.shellImage:hover {
+  opacity: .8;
 }
 
 .signup  {  
@@ -86,10 +177,9 @@ a:hover {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 1500px;
   filter: sepia(50%);
   position: relative;
-  margin-top: 15px;
 }
 
 input { 
@@ -147,23 +237,22 @@ text-align: center;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 1500px;
   filter: sepia(50%);
   position: relative;
-  margin-top: 15px;
-  text-align: center;
+  /* margin-top: 15px; */
+  /* text-align: center; */
 }
 
 .loginForm {
   background: rgba(202, 207, 205, 0.5);
   text-align: center;
   font-weight: bold;;
-  position: absolute;
-  top: 25%;
+  top: 10%;
   left: 49%;
   margin-top: -130px;
   margin-left: -144px;
-  padding: 2rem;
+  padding: 5rem;
   border-radius: .2rem;
 }
 
@@ -171,6 +260,7 @@ text-align: center;
 .footer {
   margin-top: 15px;
   justify-content: center;
+  padding: 2rem;
 }
 #demo {
   width: 100%;
@@ -179,6 +269,8 @@ text-align: center;
 
 .randomFacts {
   text-align: center;
+  padding: 17rem;
+  font-size: 2rem
 }
 
 /*faq*/
@@ -241,7 +333,7 @@ li {
 }
 
 .Restcontainer {
-  padding: 5rem;
+  padding: 9rem;
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
@@ -253,91 +345,33 @@ li {
   color: black;
 }
 
-/*HomepageCarousel*/
-.wrapper {
-  width: 100vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.slider {
-  width: 1200px;
-  height: 300px;
-  position: relative;
-  background: white;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
-  display: flex;
-  overflow:hidden;
-  background-color: #271f16;
-}
-
-.Homeslide {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  animation: slideshow 40s linear infinite;
-}
-
-.slide img {
-  height: 300px;
-  padding: 0 10px 0 10px;
-}
-
-.slider::before, .slider::after {
-  height: 100px;
-  width: 200px;
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
-  z-index: 2;
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider::after {
-  right:0;
-  top:0;
-  transform: rotateZ(180deg);
-}
-
-@keyframes slideshow {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-100%);}
-}
-/*End Carousel*/
 
 
-
-.title {
-left: 10%;
-}
-
-.about {
-  left: 10%;
-  font-size: 25px;
-}
 
 /*Weather*/
 .weatherBox p i {
 color: cornsilk;
+padding: 2rem;
 text-shadow: 1.5px 1.5px rgba(88, 49, 124, 0.5);
 animation: rotateSun 20s infinite linear;
 align-items: center;
 }
+
 .weatherBox {
-  background-color:#b9b7b3;
-  color: #271f16;
+  /* background-color:#b9b7b3; */
+  background-image: url("assets/img/weather2.jpg");
+  background-position: center;
+  /* width: 100%; */
+  color: white;
   /* border: 2px solid rgb(30, 30, 58); */
-  box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
-  width: 20%;  
-  /* height: 300px;   */
-  position: absolute; 
-  top: 0%; 
-  left: -15%; 
+  /* box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5); */
+  padding: 4rem;
+  text-align: center;
+  /* width: 20%;   */
+  /* padding: 4rem;
+  position: absolute;  */
+  /* top: 0%; 
+  left: -15%;  */
 }
 
 @keyframes rotateSun {
@@ -413,6 +447,7 @@ align-content: center;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem;
 }
 
 .flex-row {
