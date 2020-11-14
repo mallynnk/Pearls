@@ -1,51 +1,59 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav'
 
-function Nav() {
+
+var style = {
+    fontSize: "2rem",
+    padding: "20px",
+    position: "sticky",
+}
+
+  
+
+
+function Navigation() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul >
-          <li>
-            <Link to="/orderHistory">Order History</Link>
-          </li>
-          <li>
-            <Link to="/shophome">Shop</Link>
-          </li>
-          <h3>
-            <Link to="/restaurants">Restaurants</Link>
-          </h3>
-          <h3>
-            <Link to="/faq">FAQ</Link>
-          </h3>
-          <li>
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
+        <Nav style={style} className="justify-content-center" activeKey="/about">
+          <Nav.Item>
+            <Nav.Link href="/orderHistory">Order History</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/shophome">Shop</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/restaurants">Restaurants</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
+          </Nav.Item>
+        </Nav>
       );
     } else {
       return (
-        <section >
-          <h3 >
-            <Link to="/signup">Signup</Link>
-          </h3>
-          <h3>
-            <Link to="/login">Login</Link>
-          </h3>
-          <h3>
-            <Link to="/shophome">Shop</Link>
-          </h3>
-          <h3>
-            <Link to="/restaurants">Restaurants</Link>
-          </h3>
-          <h3>
-            <Link to="/faq">FAQ</Link>
-          </h3>
-        </section>
+        <Nav style={style} className="justify-content-center" activeKey="/about">
+          <Nav.Item>
+            <Nav.Link href="/signup">Signup</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/login">Login</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/Shophome">Shop</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/restaurants">Restaurants</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+          </Nav.Item>
+        </Nav>
       );
     }
   }
@@ -61,4 +69,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navigation;
