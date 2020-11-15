@@ -506,11 +506,6 @@ ul {
  list-style-type: none
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
-}
 
 
 @media (max-width: 1128px) {
@@ -555,10 +550,47 @@ form {
 
 }
 
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Restcontainer {
+    padding: none;
+    margin-top: 1rem;
+    width: auto;
+  }
+  
+  .carousel-caption {
+    position: initial;
+    color: black;
+  }
+
+}
+
 @media (max-width: 500px) {
   .loginSubmitBtn {
     width: 50%;
     margin-top: 1rem;
     align-items: center;
+  }
+  .slide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Restcontainer {
+    padding: 0;
+    width: auto;
+  }
+  
+  .carousel-caption {
+    position: initial;
+    color: black;
   }
 }
