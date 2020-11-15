@@ -34,7 +34,7 @@ function Signup(props) {
   return (
     <section class="signup">
           <Nav></Nav>
-    <div className="signupForm col-3">
+    <div className="signupForm">
       <Link to="/login">
         ← Go to Login
       </Link>
