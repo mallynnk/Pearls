@@ -593,4 +593,13 @@ form {
     position: initial;
     color: black;
   }
+
+  .container {
+    overflow-x: hidden;
+    padding: 0
+  }
+
+  .faq {
+    font-size: 3rem;
+  }
 }
