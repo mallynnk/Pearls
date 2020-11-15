@@ -4,15 +4,18 @@ import Weather from "../components/Weather/Weather.js";
 import AliceCarousel from "../components/Carousel/Carousel.js"
 import Hero from "../components/Heros"
 import Footer from "../components/Footer/Footer"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 function Homepage() {
 
     return (
 
         <div>
-        <Hero>
+            <Hero>
 
-        </Hero>
+            </Hero>
             <div className="row container">
 
                     <h3 className="display-3 col-6 title">Roysters NC</h3>

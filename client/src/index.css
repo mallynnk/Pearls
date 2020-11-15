@@ -217,7 +217,8 @@ button:hover {
 }
 
 .loginSubmitBtn {
-  width: 40%;
+  width: 50%;
+  margin-top: .5rem
 }
 
 .categoryMenu {
@@ -231,26 +232,26 @@ text-align: center;
 /*login*/
 .login {
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/FishingWaders.JPG");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 1500px;
   filter: sepia(50%);
   position: relative;
-  /* margin-top: 15px; */
-  /* text-align: center; */
+  text-align: center;
 }
 
 .loginForm {
   background: rgba(202, 207, 205, 0.5);
   text-align: center;
-  font-weight: bold;;
-  top: 10%;
-  left: 49%;
-  margin-top: -130px;
-  margin-left: -144px;
+  font-weight: bold;
   padding: 5rem;
   border-radius: .2rem;
+  width: 30%;
+  align-content: center;
+  justify-content: center;
+  margin-left: 35%;
+  margin-top: 20%
 }
 
 /*footer*/
@@ -341,10 +342,6 @@ li {
   position: initial;
   color: black;
 }
-
-
-
-
 /*Weather*/
 .weatherBox p i {
 color: cornsilk;
@@ -516,3 +513,40 @@ ul {
 }
 
 
+@media (max-width: 1128px) {
+
+/*login*/
+
+
+.loginForm {
+    background: rgba(202, 207, 205, 0.5);
+    text-align: center;
+    font-weight: bold;
+    padding: 5rem;
+    border-radius: .2rem;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto
+}
+
+.loginSubmitBtn {
+  width: 30%;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+form {
+  padding: 1rem;
+}
+
+}
+
+@media (max-width: 500px) {
+  .loginSubmitBtn {
+    width: 50%;
+    margin-top: 1rem;
+    align-items: center;
+  }
+}

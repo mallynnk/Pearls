@@ -10,9 +10,6 @@ var style = {
     position: "sticky",
 }
 
-  
-
-
 function Navigation() {
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -60,7 +57,7 @@ function Navigation() {
 
   return (
     <header>
-      <h1>
+      <h1 style={{textAlign: 'center', padding: '2rem'}}>
         <Link to="/">Roysters</Link>
       </h1>
 
