@@ -157,7 +157,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1500px;
+  height: 2000px;
   filter: sepia(50%);
   text-align: center;
 }
@@ -230,7 +230,7 @@ text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1500px;
+  height: 2000px;
   filter: sepia(50%);
   position: relative;
   text-align: center;
