@@ -571,6 +571,14 @@ form {
     color: black;
   }
 
+  .productItems {
+    padding: 1rem
+  }
+
+  .products {
+    padding: 1rem
+  }
+
 }
 
 @media (max-width: 500px) {
