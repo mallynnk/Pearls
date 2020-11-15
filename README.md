@@ -19,8 +19,9 @@ Mel Elevator Pitch here :)
 npmm etc
 
 ## Screenshots
- ![Screenshot of main page](client/src/assets/img/screenshot1.png)
  ![Screenshot of main page](client/src/assets/img/screenshot2.png)
+ ![Screenshot of main page](client/src/assets/img/screenshot1.png)
+
 
 ## Built With
 * Javascript
